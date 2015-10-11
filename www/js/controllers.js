@@ -1,6 +1,8 @@
-angular.module('starter.controllers', [])
+'use strict';
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+angular.module('po.controllers', [])
+
+.controller('AppCtrl', function($scope) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -8,49 +10,27 @@ angular.module('starter.controllers', [])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  $scope.author = 'Josh Diaz';
 
-  // Form data for the login modal
-  $scope.loginData = {};
-
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  };
-
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
-  };
-
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('AllOrdinancesCtrl', function($scope) {
+  $scope.ordinances = [
+    { title: 'Administering to the Sick', uri: 'administering-sick' },
+    { title: 'Baptism and Confirmation', uri: 'baptism-confirmation' },
+    { title: 'Conferring the Priesthood and Ordaining to an Office', uri: 'conferring-priesthood-ordaining-office' },
+    { title: 'Consecrating Oil', uri: 'consecrating-oil' },
+    { title: 'Dedicating Graves', uri: 'dedicating-graves' },
+    { title: 'Dedicating Homes', uri: 'dedicating-homes' },
+    { title: 'Father\'s / Other Blessings', uri: 'father-other-blessings' },
+    { title: 'Naming / Blessing Children', uri: 'naming-blessing-children' },
+    { title: 'Patriarchal Blessings', uri: 'patriarchal-blessings' },
+    { title: 'Sacrament', uri: 'sacrament' },
+    { title: 'Setting Apart Officers / Teachers', uri: 'setting-apart-officers-teachers' }
   ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
 });
+
+
+
+// .controller('PlaylistCtrl', function($scope, $stateParams) {
+// });

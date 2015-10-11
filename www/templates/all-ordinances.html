@@ -1,8 +1,8 @@
-<ion-view view-title="All Ordinances">
+<ion-view view-title="Priesthood Ordinances">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
+      <ion-item ng-repeat="ordinance in ordinances" href="#/app/{{ordinance.uri}}">
+        {{ordinance.title}}
       </ion-item>
     </ion-list>
   </ion-content>
