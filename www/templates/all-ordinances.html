@@ -1,7 +1,7 @@
 <ion-view view-title="Priesthood Ordinances">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="ordinance in ordinances" href="#/app/{{ordinance.uri}}">
+    <ion-list class="list-inset">
+      <ion-item class="item-text-wrap" ng-repeat="ordinance in ordinances" href="#/app/{{ordinance.uri}}">
         {{ordinance.title}}
       </ion-item>
     </ion-list>

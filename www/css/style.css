@@ -1,1 +1,18 @@
 /* Empty. Add your own CSS if you like */
+.buttons.buttons-left.header-item {
+    display: none;
+}
+
+.list {
+  margin: 1em;
+  text-align: center;
+}
+
+ion-item.item-text-wrap {
+    margin-bottom: 1.5em;
+}
+
+ion-content {
+  /*background: #e4e4e4;*/
+  padding: 1em 2%;
+}

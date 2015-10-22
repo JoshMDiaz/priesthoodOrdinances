@@ -22,11 +22,11 @@ angular.module('po.controllers', [])
     { title: 'Consecrating Oil', uri: 'consecrating-oil' },
     { title: 'Dedicating Graves', uri: 'dedicating-graves' },
     { title: 'Dedicating Homes', uri: 'dedicating-homes' },
-    { title: 'Father\'s / Other Blessings', uri: 'father-other-blessings' },
-    { title: 'Naming / Blessing Children', uri: 'naming-blessing-children' },
+    { title: 'Father\'s Blessings and Other Blessings of Comfort and Counsel', uri: 'father-other-blessings' },
+    { title: 'Naming and Blessing Children', uri: 'naming-blessing-children' },
     { title: 'Patriarchal Blessings', uri: 'patriarchal-blessings' },
     { title: 'Sacrament', uri: 'sacrament' },
-    { title: 'Setting Apart Officers / Teachers', uri: 'setting-apart-officers-teachers' }
+    { title: 'Setting Apart Officers and Teachers', uri: 'setting-apart-officers-teachers' }
   ];
 });
 
